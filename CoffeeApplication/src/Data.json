@@ -1,0 +1,170 @@
+[
+    {
+        "id": 0,
+        "title": "Chai",
+        "scor": 4.5,
+        "imgURL": "https://gastromanya.com/wp-content/uploads/2020/01/2-16.jpg",
+        "category": "Latte",
+        "price": "134"
+    },
+    {
+        "id": 1,
+        "title": "Pumpkin Spice",
+        "scor": 4.5,
+        "imgURL": "https://gastromanya.com/wp-content/uploads/2020/01/3-16.jpg",
+        "category": "Latte",
+        "price": "134"
+    },
+    {
+        "id": 2,
+        "title": "Gingerbread",
+        "scor": 4.5,
+        "imgURL": "https://gastromanya.com/wp-content/uploads/2020/01/4-17.jpg",
+        "category": "Latte",
+        "price": "134"
+    },
+    {
+        "id": 3,
+        "title": "Tarçınlı",
+        "scor": 4.5,
+        "imgURL": "https://gastromanya.com/wp-content/uploads/2020/01/5-14.jpg",
+        "category": "Latte",
+        "price": "134"
+    },
+    {
+        "id": 4,
+        "title": "Karamel Coffee",
+        "scor": 4.5,
+        "imgURL": "https://gastromanya.com/wp-content/uploads/2020/01/6-12.jpg",
+        "category": "Latte",
+        "price": "134"
+    },
+        {
+        "id": 5,
+        "title": "Macchiato caldo",
+        "scor": 4.5,
+        "imgURL": "https://cdn.yemek.com/mncrop/940/625/uploads/2015/04/macchiato.jpg",
+        "category": "Macchiato",
+        "price": "134"
+    },
+    {
+        "id": 6,
+        "title": "Macchiato freddo",
+        "scor": 4.5,
+        "imgURL": "https://i.nefisyemektarifleri.com/2019/10/18/macchiato-nedir-nasil-yapilir-icilir-600x400.jpg",
+        "category": "Macchiato",
+        "price": "134"
+    },
+    {
+        "id": 7,
+        "title": "Caramel macchiato",
+        "scor": 4.5,
+        "imgURL": "https://riogarden.com.tr/wp-content/uploads/2021/11/Caramel-Macchiato.jpg",
+        "category": "Macchiato",
+        "price": "134"
+    },
+    {
+        "id": 8,
+        "title": "Latte macchiato",
+        "scor": 4.5,
+        "imgURL": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/vimdb/155108.jpg",
+        "category": "Macchiato",
+        "price": "134"
+    },
+    {
+        "id": 9,
+        "title": "Hot Chocolate Mocha",
+        "scor": 4.5,
+        "imgURL": "https://cdn.yemek.com/uploads/2020/04/evde-mocha-yapimi-1.jpg",
+        "category": "Mocha",
+        "price": "134"
+    },
+    {
+        "id": 10,
+        "title": "White Chocolate Mocha",
+        "scor": 4.5,
+        "imgURL": "https://www.chocolate333.com/content/files/2021/9/PRODUCT-96XyMKIkqV.jpg",
+        "category": "Mocha",
+        "price": "134"
+    },
+    {
+        "id": 11,
+        "title": "Greek Frappe",
+        "scor": 4.5,
+        "imgURL": "https://herbsandflour.com/wp-content/uploads/2021/12/Greek-Frappe.jpg",
+        "category": "Frappe",
+        "price": "134"
+    },
+    {
+        "id": 12,
+        "title": "Brownie Frappe",
+        "scor": 4.5,
+        "imgURL": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/93/b9/9f/chocolate-brownie-frappe.jpg",
+        "category": "Frappe",
+        "price": "134"
+    },
+    {
+        "id": 13,
+        "title": "Espresso Frappe",
+        "scor": 4.5,
+        "imgURL": "https://www.vitamix.com/content/dam/vitamix/migration/media/recipe/rcp280031/images/Caramel-Espresso-Frappe.jpg",
+        "category": "Frappe",
+        "price": "134"
+    },
+    {
+        "id": 14,
+        "title": "Menengiç Frappe",
+        "scor": 4.5,
+        "imgURL": "https://www.coffeeconpanna.com/files/soguk-turk-kahveleri-soguk-menengic-kahvesi_359_1531841902.png",
+        "category": "Frappe",
+        "price": "134"
+    },
+    {
+        "id": 15,
+        "title": "Dondurmalı Frappe",
+        "scor": 4.5,
+        "imgURL": "https://listelist.com/wp-content/uploads/2017/08/ice-cream-coffee-600x400.jpg",
+        "category": "Frappe",
+        "price": "134"
+    },
+        {
+        "id": 16,
+        "title": "Fincan Kek Frappe",
+        "scor": 4.5,
+        "imgURL": "https://sosyalhane.com/uploads/frappe-nedir.jpeg",
+        "category": "Frappe",
+        "price": "134"
+    },
+    {
+        "id": 17,
+        "title": "Islak/hafif cappuccino",
+        "scor": 4.5,
+        "imgURL": "https://i.lezzet.com.tr/images-xxlarge-secondary/cappuccino-nedir-nasil-yapilir-f2999f21-f9b0-4dd7-9a39-9f42b8ebfee0.jpg",
+        "category": "Cappuccino",
+        "price": "134"
+    },
+    {
+        "id": 18,
+        "title": "Scuro cappuccino",
+        "scor": 4.5,
+        "imgURL": "https://cdn.yemek.com/mnresize/940/940/uploads/2015/04/cappucino.jpg",
+        "category": "Cappuccino",
+        "price": "134"
+    },
+    {
+        "id": 19,
+        "title": "Iced cappuccino",
+        "scor": 4.5,
+        "imgURL": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/61/91/e1/iced-cappuccino-with.jpg",
+        "category": "Cappuccino",
+        "price": "134"
+    },
+    {
+        "id": 20,
+        "title": "Aromalı cappuccino",
+        "scor": 4.5,
+        "imgURL": "",
+        "category": "Cappuccino",
+        "price": "134"
+    }
+]

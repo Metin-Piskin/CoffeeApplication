@@ -6,6 +6,10 @@ export default StyleSheet.create({
         flex: 1,
         justifyContent:"center",
     },
+    lottiecontainer:{
+        height:300,
+        width:400,
+    },
     signcontainer:{
         flexDirection:"row",
         justifyContent:"center",

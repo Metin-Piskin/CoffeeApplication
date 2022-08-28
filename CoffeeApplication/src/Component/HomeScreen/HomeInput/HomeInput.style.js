@@ -7,7 +7,7 @@ export default StyleSheet.create({
         flexDirection: "row",
         alignItems:"center",
         paddingHorizontal:10,
-        marginVertical:15,
+        marginVertical:10,
     },
     ınput:{
         marginLeft:5,

@@ -24,4 +24,8 @@ export default StyleSheet.create({
         marginHorizontal:8,
         marginVertical:10
     },
+    lottiecontainer:{
+        height:300,
+        width:400,
+    },
 })

@@ -33,7 +33,7 @@ function HomeTabs() {
                 options={{
                     tabBarIcon: ({ focused }) => {
                         if (focused) {
-                            return <Icon name="home-variant" size={30} color={"#D97E3C"} />
+                            return <Icon name="home-variant" size={30} color={"#D17742"} />
                         }
                         return <Icon name="home-variant" size={30} color={"#494F4E"} />
                     }
@@ -43,7 +43,7 @@ function HomeTabs() {
                 options={{
                     tabBarIcon: ({ focused }) => {
                         if (focused) {
-                            return <Icon name="heart" size={30} color={"#D97E3C"} />
+                            return <Icon name="heart" size={30} color={"#D17742"} />
                         }
                         return <Icon name="heart" size={30} color={"#494F4E"} />
                     }
@@ -53,7 +53,7 @@ function HomeTabs() {
                 options={{
                     tabBarIcon: ({ focused }) => {
                         if (focused) {
-                            return <Icon name="bell" size={30} color={"#D97E3C"} />
+                            return <Icon name="bell" size={30} color={"#D17742"} />
                         }
                         return <Icon name="bell" size={30} color={"#494F4E"} />
                     }

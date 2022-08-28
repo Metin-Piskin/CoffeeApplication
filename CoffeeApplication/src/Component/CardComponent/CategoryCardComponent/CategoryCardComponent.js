@@ -11,7 +11,7 @@ const CategoryCardComponent = ({products , key, onPress}) => {
         <View style={styles.container} key={key}>
             <View style={styles.topcontainer}>
                 <View style={styles.scorcontainer}>
-                    <Icon name="star" size={15} color={"#D97E3C"} />
+                    <Icon name="star" size={15} color={"#D17742"} />
                     <Text style={styles.scortext}>{products.scor}</Text>
                 </View>
                 <Image
@@ -24,7 +24,7 @@ const CategoryCardComponent = ({products , key, onPress}) => {
                 <Text style={styles.categorytext}>{products.category}</Text>
                 <View style={styles.bottomcontainer}>
                     <View style={styles.moneycontainer}>
-                        <Iconiki name="attach-money" size={13} color={"#D97E3C"} />
+                        <Iconiki name="attach-money" size={13} color={"#D17742"} />
                         <Text style={styles.pricetext}>{products.price}</Text>
                     </View>
                     <TouchableOpacity style={styles.plusbutton} onPress={onPress}>

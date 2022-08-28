@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { Formik } from 'formik';
 import auth from "@react-native-firebase/auth";
 import * as Yup from 'yup';
@@ -10,6 +10,7 @@ import styles from './Login.style';
 import Input from '../../../Component/LoginScreen/LoginInput';
 import GButton from '../../../Component/LoginScreen/LoginGirişButton';
 import KButton from '../../../Component/LoginScreen/LoginTextButton';
+import LottieLogin from "../../../Component/Lottie/Login";
 
 const initialFormValues = {
     usermail: '',
@@ -39,6 +40,9 @@ const Login = ({ navigation }) => {
 
     return (
         <View style={styles.container}>
+            <View style={styles.lottiecontainer}>
+                <LottieLogin />
+            </View>
             <Formik
                 initialValues={initialFormValues}
                 onSubmit={handleFormSubmit}
@@ -90,7 +94,12 @@ const Login = ({ navigation }) => {
                             <KButton title="Şifreni mi Unuttun?" onPress={null} />
                         </View>
 
-                        <GButton title="Giriş Yap" onPress={handleSubmit} />
+
+                        <TouchableOpacity onPress={handleSubmit} disabled={!isValid}>
+                            <View style={stylis.container(isValid)}>
+                                <Text style={stylis.title}>Giriş Yap</Text>
+                            </View>
+                        </TouchableOpacity>
                     </>
                 )}
             </Formik>
@@ -102,3 +111,21 @@ const Login = ({ navigation }) => {
     )
 }
 export default Login;
+
+
+const stylis = StyleSheet.create({
+    container: isValid => ({
+        backgroundColor: isValid ? "#D17742" : "#494F4E",
+        alignItems: "center",
+        justifyContent: "center",
+        marginHorizontal: 10,
+        marginVertical: 10,
+        paddingVertical: 10,
+        borderRadius: 10,
+    }),
+        title:{
+    fontWeight: 'bold',
+    fontSize: 18,
+    color: '#0D181A'
+}
+})

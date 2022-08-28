@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { Formik } from 'formik';
 import auth from "@react-native-firebase/auth";
 import * as Yup from 'yup';
@@ -10,6 +10,7 @@ import styles from './Sign.style';
 import Input from '../../../Component/LoginScreen/LoginInput';
 import KButton from '../../../Component/LoginScreen/LoginGirişButton';
 import GButton from '../../../Component/LoginScreen/LoginTextButton';
+import LottieSign from '../../../Component/Lottie/Sign';
 
 const initialFormValues = {
     usermail: "",
@@ -38,6 +39,9 @@ const Sign = ({ navigation }) => {
 
     return (
         <View style={styles.container}>
+            <View style={styles.lottiecontainer}>
+                <LottieSign />
+            </View>
             <Formik initialValues={initialFormValues} onSubmit={handleFormSubmit} validationSchema={LoginFormSchema}>
                 {({ values, handleChange, handleSubmit, handleBlur, isValid }) => (
                     <>
@@ -96,7 +100,12 @@ const Sign = ({ navigation }) => {
                                 isSecure
                             />
                         </View>
-                        <KButton title="Kayıt Ol" onPress={handleSubmit} />
+                        
+                        <TouchableOpacity onPress={handleSubmit} disabled={!isValid}>
+                            <View style={stylis.container(isValid)}>
+                            <Text style={stylis.title}>Kayıt Ol</Text>
+                            </View>
+                        </TouchableOpacity>
                     </>
                 )}
             </Formik>
@@ -108,3 +117,20 @@ const Sign = ({ navigation }) => {
     )
 }
 export default Sign;
+
+const stylis = StyleSheet.create({
+    container: isValid => ({
+        backgroundColor: isValid ? "#D17742" : "#494F4E",
+        alignItems: "center",
+        justifyContent: "center",
+        marginHorizontal: 10,
+        marginVertical: 10,
+        paddingVertical: 10,
+        borderRadius: 10,
+    }),
+    title: {
+        fontWeight: 'bold',
+        fontSize: 18,
+        color: '#0D181A'
+    }
+})

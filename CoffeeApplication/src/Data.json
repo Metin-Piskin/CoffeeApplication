@@ -39,7 +39,7 @@
         "category": "Latte",
         "price": "134"
     },
-        {
+    {
         "id": 5,
         "title": "Macchiato caldo",
         "scor": 4.5,
@@ -127,7 +127,7 @@
         "category": "Frappe",
         "price": "134"
     },
-        {
+    {
         "id": 16,
         "title": "Fincan Kek Frappe",
         "scor": 4.5,
@@ -156,14 +156,6 @@
         "title": "Iced cappuccino",
         "scor": 4.5,
         "imgURL": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/61/91/e1/iced-cappuccino-with.jpg",
-        "category": "Cappuccino",
-        "price": "134"
-    },
-    {
-        "id": 20,
-        "title": "Aromalı cappuccino",
-        "scor": 4.5,
-        "imgURL": "",
         "category": "Cappuccino",
         "price": "134"
     }

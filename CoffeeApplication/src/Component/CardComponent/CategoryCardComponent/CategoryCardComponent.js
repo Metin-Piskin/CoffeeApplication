@@ -6,9 +6,9 @@ import Iconiki from 'react-native-vector-icons/MaterialIcons'
 import styles from './CategoryCardComponent.style';
 
 
-const CategoryCardComponent = ({products , key, onPress}) => {
+const CategoryCardComponent = ({ products, onPress }) => {
     return (
-        <View style={styles.container} key={key}>
+        <View style={styles.container}>
             <View style={styles.topcontainer}>
                 <View style={styles.scorcontainer}>
                     <Icon name="star" size={15} color={"#D17742"} />

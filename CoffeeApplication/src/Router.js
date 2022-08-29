@@ -29,7 +29,7 @@ function HomeTabs() {
             }}
         >
             <Tab.Screen
-                name="Home" component={Home}
+                name="HomeScreen" component={Home}
                 options={{
                     tabBarIcon: ({ focused }) => {
                         if (focused) {
@@ -93,7 +93,7 @@ const Router = () => {
                     ) : (
                         <>
                             <Stack.Screen name="Home" component={HomeTabs} options={{ headerShown: false }} />
-                            <Stack.Screen name="Detail" component={Detail} />
+                            <Stack.Screen name="Detail" component={Detail} options={{ headerShown: false }}/>
                         </>
                     )
                 }

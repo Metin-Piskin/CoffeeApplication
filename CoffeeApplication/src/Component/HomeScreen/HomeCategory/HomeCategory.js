@@ -8,21 +8,27 @@ import Data from '../../../Data.json';
 
 const listTab = [
     {
+        id: 1,
         "status": "Hepsi"
     },
     {
+        id: 2,
         "status": "Latte"
     },
     {
+        id: 3,
         "status": "Macchiato"
     },
     {
+        id: 4,
         "status": "Mocha"
     },
     {
+        id: 5,
         "status": "Frappe"
     },
     {
+        id: 6,
         "status": "Cappuccino"
     }
 ]
@@ -45,11 +51,10 @@ const HomeCategory = () => {
         navigation.navigate('Detail', { id });
     }
 
-    const renderProducts = ({ item, index }) => {
+    const renderProducts = ({ item }) => {
         return (
             <CategoryCardComponent
                 products={item}
-                key={index}
                 onPress={() => onPresCoffee(item.id)}
             />
         )
@@ -63,6 +68,7 @@ const HomeCategory = () => {
                         <TouchableOpacity
                             style={stylis.container}
                             onPress={() => setStatusFilter(e.status)}
+                            key={e.id}
                         >
                             <Text style={[stylis.btnNormal, status === e.status && stylis.btnPress]}>
                                 {e.status}

@@ -1,7 +1,6 @@
 import React from "react";
 import { View, Text, ScrollView, Image } from "react-native";
 import auth from "@react-native-firebase/auth";
-import Icons from 'react-native-vector-icons/Fontisto'
 import Svg, { Path } from 'react-native-svg';
 
 import styles from './Home_styles';
@@ -9,7 +8,7 @@ import Search from '../../Component/HomeScreen/HomeInput';
 import Category from '../../Component/HomeScreen/HomeCategory';
 import Header from '../../Component/HomeScreen/HomeHeader';
 import HomeSpecial from '../../Component/HomeScreen/HomeSpecial';
-import LottieHome from "../../Component/Lottie/Home";
+import LottieHome from "../../Component/Lottie/LottieHome";
 
 const Home = () => {
     return (

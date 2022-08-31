@@ -9,7 +9,7 @@ import Data from '../../../Data.json';
 const listTab = [
     {
         id: 1,
-        "status": "Hepsi"
+        "status": "All"
     },
     {
         id: 2,
@@ -35,11 +35,11 @@ const listTab = [
 
 const HomeCategory = () => {
     const navigation = useNavigation();
-    const [status, setStatus] = useState('Hepsi');
+    const [status, setStatus] = useState('All');
     const [datalist, setDataList] = useState(Data);
 
     const setStatusFilter = status => {
-        if (status !== 'Hepsi') {
+        if (status !== 'All') {
             setDataList([...Data.filter(e => e.category === status)])
         } else {
             setDataList(Data)

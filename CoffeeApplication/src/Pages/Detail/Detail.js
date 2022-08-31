@@ -6,22 +6,58 @@ import Iconiki from 'react-native-vector-icons/MaterialIcons'
 
 import styles from './Detail.style';
 import { CoffeButton, MilkButton } from "../../Component/ButtonComponent/DerailButtons/KareTextButton/KareTextButton";
-import { BackButton, HeartButton } from '../../Component/ButtonComponent/DerailButtons/KareButton/KareButton';
+import { BackButton, Heart, HeartPress } from '../../Component/ButtonComponent/DerailButtons/KareButton/KareButton';
 import BuyButton from '../../Component/ButtonComponent/DerailButtons/BuyButton';
 
+const listTab = [
+    {
+        id: 1,
+        "status": "S"
+    },
+    {
+        id: 2,
+        "status": "M"
+    },
+    {
+        id: 3,
+        "status": "L"
+    }
+]
+
 const Detail = (props) => {
-    const { id } = props.route.params;
-    console.log(id + '. Coffee')
+    const [status, setStatus] = useState('S');
+    const [fav, setFav] = useState(true);
+
 
     const Back = () => {
         props.navigation.goBack();
+    }
+
+    const sizePress = status => {
+        setStatus(status)
+    }
+
+    const Favpres = () => {
+        fav === true ? (
+            setFav(false)
+        ) : (
+            setFav(true)
+        )
     }
 
     return (
         <View style={styles.container}>
             <View style={styles.header}>
                 <BackButton BackPress={Back} />
-                <HeartButton />
+                <TouchableOpacity style={stylis.heartcontainer} onPress={Favpres}>
+                    {
+                        fav ? (
+                            <Heart />
+                        ) : (
+                            <HeartPress />
+                        )
+                    }
+                </TouchableOpacity>
             </View>
             <Image
                 source={{ uri: 'https://gastromanya.com/wp-content/uploads/2020/01/6-12.jpg' }}
@@ -53,17 +89,19 @@ const Detail = (props) => {
             </View>
             <Text style={stylis.size}>Size</Text>
             <View style={styles.sizeoncontainer}>
-                <TouchableOpacity style={stylis.sizebutton}>
-                    <Text style={stylis.sizetext}>S</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={stylis.sizebutton}>
-                    <Text style={stylis.sizetext}>M</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={stylis.sizebutton}>
-                    <Text style={stylis.sizetext}>L</Text>
-                </TouchableOpacity>
+                {
+                    listTab.map(e => (
+                        <TouchableOpacity
+                            style={[stylis.sizebutton, status === e.status && stylis.sizebuttonPress]}
+                            key={e.id}
+                            onPress={() => sizePress(e.status)}
+                        >
+                            <Text style={stylis.sizetext}>{e.status}</Text>
+                        </TouchableOpacity>
+                    ))
+                }
             </View>
-            <View style={{flexDirection:"row", justifyContent:"space-between"}}>
+            <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
                 <View style={styles.pricecontainer}>
                     <Text style={styles.price}>Price</Text>
                     <View style={{ flexDirection: "row" }}>
@@ -87,6 +125,16 @@ const stylis = StyleSheet.create({
         alignItems: "center",
         borderRadius: 10,
     },
+    sizebuttonPress: {
+        backgroundColor: '#1E221E',
+        paddingHorizontal: 50,
+        paddingVertical: 8,
+        justifyContent: "center",
+        alignItems: "center",
+        borderRadius: 10,
+        borderWidth: 1,
+        borderColor: '#D17742'
+    },
     sizetext: {
         color: '#fff',
         fontWeight: "bold",
@@ -97,5 +145,15 @@ const stylis = StyleSheet.create({
         fontSize: 17,
         marginHorizontal: 20,
         marginBottom: 10,
+    },
+    heartcontainer: {
+        backgroundColor: '#0D181A',
+        justifyContent: "center",
+        alignItems: "center",
+        marginHorizontal: 10,
+        marginVertical: 10,
+        paddingHorizontal: 15,
+        borderRadius: 10,
+        left: 240
     }
 })

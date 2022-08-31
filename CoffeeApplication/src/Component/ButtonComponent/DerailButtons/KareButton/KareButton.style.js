@@ -12,14 +12,5 @@ export default StyleSheet.create({
         borderRadius:10,
         left:10
     },
-    heartcontainer:{
-        backgroundColor: '#0D181A',
-        justifyContent:"center",
-        alignItems:"center",
-        marginHorizontal:10,
-        marginVertical:10,
-        paddingHorizontal:15,
-        borderRadius:10,
-        left:240
-    }
+
 })

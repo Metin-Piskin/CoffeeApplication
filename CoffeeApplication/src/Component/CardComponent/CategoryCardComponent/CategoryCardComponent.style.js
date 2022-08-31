@@ -10,7 +10,7 @@ export default StyleSheet.create({
     },
     topcontainer: {},
     scorcontainer: {
-        backgroundColor:'gray',
+        backgroundColor: 'rgba(52, 52, 52, 0.8)',
         position:"absolute",
         zIndex:1,
         right:0.2,
